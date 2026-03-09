@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Rubik } from "next/font/google";
-import "./globals.css";
 import { ToastProvider } from "@/components/common/ToastProvider";
 
 const rubik = Rubik({
