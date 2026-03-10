@@ -1,12 +1,7 @@
-export default function Login() {
+export default function HomePage() {
   return (
     <div>
-      <h1>Login</h1>
-      <form>
-        <input type="email" placeholder="Email" />
-        <input type="password" placeholder="Password" />
-        <button type="submit">Login</button>
-      </form>
+      <h1>Olá</h1>
     </div>
-  );
+  )
 }

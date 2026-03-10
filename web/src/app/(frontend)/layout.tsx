@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Rubik } from "next/font/google";
 import { ToastProvider } from "@/components/common/ToastProvider";
+import "./global.css";
 
 const rubik = Rubik({
   variable: "--font-rubik",
@@ -8,23 +9,31 @@ const rubik = Rubik({
 })
 
 export const metadata: Metadata = {
-  title: "Noctiluz",
-  description: "Plataforma para olimpíadas científicas e reforço escolar",
+  title: "Dinovo",
+  description: "Loja virtual de venda de ovos de dinossauros",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+
+export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="pt-BR">
-      <body
-        className={`${rubik.variable} antialiased`}
-      >
+    <html>
+      <body className="min-h-screen flex flex-col">
+
+        <nav className="flex flex-col items-center gap-2 p-4 bg-black">
+          <h2 className="text-center text-4xl font-semibold text-white">DinOvo</h2>
+          <div className="flex gap-4 text-white">
+            <a href="/">Home</a>
+            <a href="/produtos">Produtos</a>
+            <a href="/sobre">Sobre</a>
+          </div>
+        </nav>
+
         {children}
 
-        <ToastProvider />
+        <footer className="mt-auto flex flex-col items-center p-4 bg-black text-white">
+          <p>© 2026 DinOvo</p>
+        </footer>
+
       </body>
     </html>
   );
