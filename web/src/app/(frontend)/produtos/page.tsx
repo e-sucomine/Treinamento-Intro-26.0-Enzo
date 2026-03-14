@@ -19,7 +19,7 @@ export default function produtos() {
             preço={350}
             peso={50000}
             comprimento={24}
-            imagem="Braquiossauro.png"
+            imagem="/Braquiossauro.png"
           />
         </div>
 
@@ -29,7 +29,7 @@ export default function produtos() {
             preço={500.000}
             peso={20}
             comprimento={2}
-            imagem="Velociraptor.png"
+            imagem="/Velociraptor.png"
           />
         </div>
 
@@ -39,7 +39,7 @@ export default function produtos() {
             preço={200.000}
             peso={10000}
             comprimento={8}
-            imagem="Tricerátops.png"
+            imagem="/Tricerátops.png"
           />
         </div>
 
@@ -49,7 +49,7 @@ export default function produtos() {
             preço={250.000}
             peso={8000}
             comprimento={9}
-            imagem="Anquilossauro.jpg"
+            imagem="/Anquilossauro.jpg"
           />
         </div>
 
@@ -59,7 +59,7 @@ export default function produtos() {
             preço={900.000}
             peso={8000}
             comprimento={12}
-            imagem="Tiranossauro.jpg"
+            imagem="/Tiranossauro.jpg"
           />
         </div>
 
@@ -69,7 +69,7 @@ export default function produtos() {
             preço={450.000}
             peso={35}
             comprimento={8}
-            imagem="Pterossauro.jpg"
+            imagem="/Pterossauro.jpg"
           />
         </div>
       </div>

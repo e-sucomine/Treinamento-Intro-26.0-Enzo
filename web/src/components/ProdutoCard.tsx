@@ -2,6 +2,7 @@
 
 import React, { useState} from 'react';
 import { useCarrinho } from "@/context/CarrinhoContext";
+import Image from "next/image";
 
 type ProdutoCardProps = {
   nome: string;
@@ -30,10 +31,12 @@ export default function ProdutoCard({ nome, preço, peso, comprimento, imagem }:
 
   return (
     <div className='border border-black rounded-lg w-72 overflow-hidden'>
-      <img
+      <Image
         src={imagem}
         alt={nome}
-        className='w-full h-48 object-cover'
+        width={640}
+        height={640}
+        className="w-full h-48 object-cover"
       />
 
       <div className='p-3 bg-white font-serif'>

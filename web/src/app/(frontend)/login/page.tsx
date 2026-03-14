@@ -1,12 +1,19 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Login() {
   return (
     <div className="min-h-screen flex bg-black text-white">
       <div className="hidden lg:flex w-1/2 items-center justify-center bg-black">
-        <img src="/LogoM.png" alt="Logo" className="h-[640px] w-auto max-w-[60%] object-contain" />
+        <Image
+          src="/LogoM.png"
+          alt="Logo"
+          width={640}
+          height={640}
+          className="h-160 w-auto max-w-[60%] object-contain"
+        />
       </div>
 
       <div className="flex w-full lg:w-1/2 items-center justify-center p-6">
