@@ -1,3 +1,7 @@
+"use client";
+
+import Link from "next/link";
+
 export default function Login() {
   return (
     <div className="min-h-screen flex bg-black text-white">
@@ -10,7 +14,11 @@ export default function Login() {
           <h1 className="text-2xl font-bold text-center">Login</h1>
           <input className="w-full rounded border border-white/20 bg-white/10 p-3" placeholder="Email" />
           <input className="w-full rounded border border-white/20 bg-white/10 p-3" placeholder="Senha" type="password" />
-          <button className="w-full rounded bg-white/10 p-3 text-white hover:bg-white/20">Entrar</button>
+          <Link href="/">
+            <button className="w-full rounded bg-white/10 p-3 text-white hover:bg-white/20 hover:scale-110 transition-transform duration-200">
+              Entrar
+            </button>
+          </Link>
         </div>
       </div>
     </div>
